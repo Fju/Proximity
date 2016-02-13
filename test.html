@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Proximity - Example</title>
+	</head>
+	<body style="background: #333; margin: 0; padding: 0;">
+		<canvas id="audioCanvas" width=600 height=400></canvas>
+		<audio src="song.mp3" type="audio/mpeg" controls id="audioSource" crossorigin="anonymous"></audio>
+	</body>
+	<script src="audio.js"></script>
+	<script type="text/javascript">
+		var myVisualizer = new visualizer(document.getElementById("audioSource"), document.getElementById("audioCanvas"));
+		myVisualizer.init();
+	</script>
+</html>
